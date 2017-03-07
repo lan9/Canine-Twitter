@@ -1,0 +1,16 @@
+{
+  "name": "Canine Twitter",
+  "description": "",
+  "version": "1.0",
+  "permissions": [
+    "activeTab", "tabs", "https://*.twitter.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["https://*.twitter.com/*"],
+    "js": ["jquery-3.1.1.slim.min.js", "canine.js"]
+  }],
+  "browser_action": {
+    "default_title": "Canine Twitter"
+  },
+  "manifest_version": 2
+}
